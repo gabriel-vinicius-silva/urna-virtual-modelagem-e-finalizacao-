@@ -22,10 +22,20 @@ votingForm.addEventListener('submit', function(event) {
   event.preventDefault();
   
   const password = document.getElementById('password').value;
-  if (password === 'suasenha') {
-    alert('Senha correta. Voto computado!');
-    window.location.reload();
+  
+  if (candidateNumber !== "") {
+    // Primeiro, verificamos se foi selecionado um candidato
+    // Se sim, então pedimos a senha
+    if (password === 'g') {
+      // Verificamos a senha
+      alert('Senha correta. Voto computado para o candidato ' + candidateNumber + '!');
+      window.location.reload();
+    } else {
+      // Senha incorreta
+      alert('Senha incorreta. Tente novamente.');
+    }
   } else {
-    alert('Senha incorreta. Tente novamente.');
+    // Se nenhum candidato foi selecionado
+    alert('Selecione um candidato antes de prosseguir.');
   }
 });
