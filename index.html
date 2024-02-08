@@ -10,14 +10,24 @@
   <div class="container">
     <h2>Teclado de Votação</h2>
     <div class="card-container">
-      <div class="card">
-        <h3>Candidato 1</h3>
-        <p>Número: 1</p>
-        <!-- Adicione mais cartões para os outros candidatos -->
+      <div class="card" onclick="selectCandidate(10)">
+        <img src="clesio_lira.jpg" alt="Clesio Lira">
+        <h3>Clesio Lira</h3>
+        <p>Número: 10</p>
+      </div>
+      <div class="card" onclick="selectCandidate(20)">
+        <img src="rosineide_bendo.jpg" alt="Rosineide Bendo">
+        <h3>Rosineide Bendo</h3>
+        <p>Número: 20</p>
+      </div>
+      <div class="card" onclick="selectCandidate(30)">
+        <img src="handerson.jpg" alt="Handerson">
+        <h3>Handerson</h3>
+        <p>Número: 30</p>
       </div>
     </div>
     <form id="votingForm">
-      <input type="password" id="password" placeholder="Digite sua senha">
+      <input type="password" id="password" placeholder="Senha">
       <div class="keypad">
         <button type="button" class="key" onclick="addNumber(1)">1</button>
         <button type="button" class="key" onclick="addNumber(2)">2</button>
