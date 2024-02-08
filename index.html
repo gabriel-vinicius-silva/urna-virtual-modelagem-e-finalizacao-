@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teclado de Votação</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Teclado de Votação</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Candidato 1</h3>
+        <p>Número: 1</p>
+        <!-- Adicione mais cartões para os outros candidatos -->
+      </div>
+    </div>
+    <form id="votingForm">
+      <input type="password" id="password" placeholder="Digite sua senha">
+      <div class="keypad">
+        <button type="button" class="key" onclick="addNumber(1)">1</button>
+        <button type="button" class="key" onclick="addNumber(2)">2</button>
+        <button type="button" class="key" onclick="addNumber(3)">3</button>
+        <button type="button" class="key" onclick="addNumber(4)">4</button>
+        <button type="button" class="key" onclick="addNumber(5)">5</button>
+        <button type="button" class="key" onclick="addNumber(6)">6</button>
+        <button type="button" class="key" onclick="addNumber(7)">7</button>
+        <button type="button" class="key" onclick="addNumber(8)">8</button>
+        <button type="button" class="key" onclick="addNumber(9)">9</button>
+        <button type="button" class="key" onclick="addNumber(0)">0</button>
+        <button type="button" class="clear" onclick="clearInput()">Limpar</button>
+      </div>
+      <button type="submit">Votar</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
